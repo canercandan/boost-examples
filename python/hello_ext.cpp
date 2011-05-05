@@ -21,11 +21,11 @@
 
 const char* greet()
 {
-  return "hello, world";
+    return "hello, world";
 }
 
 BOOST_PYTHON_MODULE(hello_ext)
 {
-  namespace bp = boost::python
-  bp::def("greet", greet);
+    namespace bp = boost::python;
+    bp::def("greet", greet);
 }
